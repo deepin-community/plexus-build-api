@@ -1,0 +1,24 @@
+Description: Fixes the compatibility with the version of plexus-utils in Debian
+Author: Emmanuel Bourg <ebourg@apache.org>
+Forwarded: no
+--- a/src/main/java/org/sonatype/plexus/build/incremental/EmptyScanner.java
++++ b/src/main/java/org/sonatype/plexus/build/incremental/EmptyScanner.java
+@@ -54,4 +54,6 @@
+     return basedir;
+   }
+ 
++  public void setFilenameComparator(java.util.Comparator<String> comparator) {
++  }
+ }
+--- a/src/test/java/org/sonatype/plexus/build/incremental/test/TestIncrementalBuildContext.java
++++ b/src/test/java/org/sonatype/plexus/build/incremental/test/TestIncrementalBuildContext.java
+@@ -66,6 +66,9 @@
+     public File getBasedir() {
+       return basedir;
+     }
++
++    public void setFilenameComparator(java.util.Comparator<String> comparator) {
++    }
+   }
+ 
+   private final Set changedFiles;

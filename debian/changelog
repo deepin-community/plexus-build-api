@@ -1,0 +1,85 @@
+plexus-build-api (0.0.7-4) unstable; urgency=medium
+
+  * Team upload.
+  * Fixed the compatibility with plexus-utils 3.3 (Closes: #952351)
+  * Standards-Version updated to 4.5.0
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Mon, 24 Feb 2020 12:35:21 +0100
+
+plexus-build-api (0.0.7-3) unstable; urgency=medium
+
+  * Team upload.
+  * Build depend on libplexus-component-metadata-java
+    instead of libplexus-maven-plugin-java
+  * Removed the libplexus-build-api-java-doc package
+  * Standards-Version updated to 4.2.1
+  * Switch to debhelper level 11
+  * Use salsa.debian.org Vcs-* URLs
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Fri, 23 Nov 2018 01:04:29 +0100
+
+plexus-build-api (0.0.7-2) unstable; urgency=medium
+
+  * Team upload.
+  * Depend on libplexus-container-default1.5-java instead of
+    libplexus-containers-java
+  * Build with the DH sequencer instead of CDBS
+  * Moved the package to Git
+  * Standards-Version updated to 4.1.0
+  * Switch to debhelper level 10
+  * Fixed the watch file
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Wed, 30 Aug 2017 12:44:51 +0200
+
+plexus-build-api (0.0.7-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+  * debian/control:
+    - Standards-Version updated to 3.9.5 (no changes)
+    - Use canonical URLs for the Vcs-* fields
+  * Switch to debhelper level 9
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Thu, 20 Mar 2014 14:26:50 +0100
+
+plexus-build-api (0.0.4-5) unstable; urgency=low
+
+  * Team upload.
+  * Add --java-lib flag to install jars in /usr/share/java directory.
+    (Closes: #676233).
+  * Bump Standards-Version to 3.9.3. No changes were required.
+  * Update copyright file.
+
+ -- Miguel Landaeta <miguel@miguel.cc>  Tue, 05 Jun 2012 19:43:16 -0430
+
+plexus-build-api (0.0.4-4) unstable; urgency=low
+
+  * Team upload.
+  * Update debian/watch to point to github.
+  * Switch to source format 3.0.
+  * Switch to debhelper level 7.
+  * Update Standards-Version: 3.9.1.
+  * Update Homepage to point to github page.
+  * Use Maven for building the package.
+  * Add a documentation package.
+
+ -- Torsten Werner <twerner@debian.org>  Thu, 25 Aug 2011 13:54:00 +0200
+
+plexus-build-api (0.0.4-3) unstable; urgency=low
+
+  * Add version constraint on libplexus-utils (Closes: #542588)
+  * Bump up Standards-Version to 3.8.3, no changes
+
+ -- Ludovic Claude <ludovic.claude@laposte.net>  Wed, 02 Sep 2009 20:54:02 +0100
+
+plexus-build-api (0.0.4-2) unstable; urgency=low
+
+  * Change Build-Depends: default-jdk.
+
+ -- Torsten Werner <twerner@debian.org>  Fri, 14 Aug 2009 15:26:59 +0200
+
+plexus-build-api (0.0.4-1) experimental; urgency=low
+
+  * Initial release. (Closes: #521704)
+
+ -- Ludovic Claude <ludovic.claude@laposte.net>  Sat, 28 Mar 2009 22:01:14 +0000

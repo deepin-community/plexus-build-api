@@ -1,0 +1,27 @@
+Source: plexus-build-api
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Ludovic Claude <ludovic.claude@laposte.net>
+Build-Depends:
+ debhelper (>= 11),
+ default-jdk,
+ libplexus-component-metadata-java,
+ libplexus-utils-java,
+ maven-debian-helper (>= 2.2)
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/java-team/plexus-build-api.git
+Vcs-Browser: https://salsa.debian.org/java-team/plexus-build-api
+Homepage: https://github.com/sonatype/sisu-build-api
+
+Package: libplexus-build-api-java
+Architecture: all
+Depends: ${maven:Depends}, ${misc:Depends}
+Recommends: ${maven:OptionalDepends}
+Description: Incremental build API for Plexus components
+ The Plexus project provides a full software stack for creating and
+ executing software projects. Based on the Plexus container, the applications
+ can utilise component-oriented programming to build modular, reusable
+ components that can easily be assembled and reused.
+ .
+ This package provides an incremental build API for Plexus components.
